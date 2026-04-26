@@ -5,6 +5,13 @@ RUN apt-get update && apt-get install -y \
     tesseract-ocr-spa \
     tesseract-ocr-eng \
     libgl1 \
+    libglib2.0-0 \
+    libsm6 \
+    libxext6 \
+    libxrender-dev \
+    poppler-utils \
+    libmagic1 \
+    ffmpeg \
     && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /app
